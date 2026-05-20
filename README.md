@@ -1,4 +1,4 @@
-# Week 9 Homework – DNS, TLS, Load Balancing, Troubleshooting, and Terraform
+# Week 10 Homework – DNS, TLS, Load Balancing, Troubleshooting, and Terraform
 
 ## What This Is
 
