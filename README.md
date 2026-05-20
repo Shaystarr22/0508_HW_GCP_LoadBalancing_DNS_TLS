@@ -2,7 +2,7 @@
 
 ## What This Is
 
-This is my Week 9 assignment covering DNS, SSL/TLS, load balancing, cloud infrastructure troubleshooting, and deploying infrastructure with Terraform on Google Cloud Platform.
+This is my Week 10 assignment covering DNS, SSL/TLS, load balancing, cloud infrastructure troubleshooting, and deploying infrastructure with Terraform on Google Cloud Platform.
 
 ---
 
@@ -29,7 +29,7 @@ Used the Terraform registry docs to figure out the right syntax and resource typ
 I spun up the broken environment using this command:
 
 ```bash
-curl -s https://storage.googleapis.com/static-site-bucket-522479235074/broken-env-hw-1.sh | sh
+curl -s https://storage.googleapis.com/static-site-bucket-522479235074/broken-env-1.sh | sh
 ```
 
 ### What I Noticed Right Away
