@@ -7,9 +7,10 @@ This is my Week 10 assignment covering DNS, SSL/TLS, load balancing, cloud infra
 ---
 
 ## Docs and Resources I Used
-
+# If its trash don't tell me
 ### Google Cloud
-
+## Troubleshooting Notes
+#One issue I encountered was the VM appearing healthy at first while the backend service still showed unhealthy because the health check endpoint returned a 404 error. This caused the managed instance group backend to fail health checks even though the web server itself appeared to be running.
 I referenced the GCP docs mainly for understanding how load balancers, managed instance groups, firewall rules, Cloud DNS, and health checks all fit together.
 
 - https://cloud.google.com/load-balancing/docs
