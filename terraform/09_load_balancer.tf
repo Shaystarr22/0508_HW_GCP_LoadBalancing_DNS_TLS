@@ -1,5 +1,5 @@
 resource "google_compute_backend_service" "web_backend" {
-  name                  = "week9-backend-service"
+  name                  = "week10-backend-service"
   protocol              = "HTTP"
   load_balancing_scheme = "EXTERNAL"
   port_name             = "http"
@@ -12,21 +12,21 @@ resource "google_compute_backend_service" "web_backend" {
 }
 
 resource "google_compute_url_map" "web_url_map" {
-  name            = "week9-url-map"
+  name            = "week10-url-map"
   default_service = google_compute_backend_service.web_backend.id
 }
 
 resource "google_compute_target_http_proxy" "web_proxy" {
-  name    = "week9-http-proxy"
+  name    = "week10-http-proxy"
   url_map = google_compute_url_map.web_url_map.id
 }
 
 resource "google_compute_global_address" "web_ip" {
-  name = "week9-global-ip"
+  name = "week10-global-ip"
 }
 
 resource "google_compute_global_forwarding_rule" "web_forwarding_rule" {
-  name                  = "week9-forwarding-rule"
+  name                  = "week10-forwarding-rule"
   load_balancing_scheme = "EXTERNAL"
   ip_protocol           = "TCP"
   port_range            = "80"

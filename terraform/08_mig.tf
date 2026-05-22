@@ -1,8 +1,8 @@
 resource "google_compute_region_instance_group_manager" "web_mig" {
-  name   = "week9-web-mig"
+  name   = "week10-web-mig"
   region = var.region
 
-  base_instance_name = "week9-web"
+  base_instance_name = "week10-web"
 
   distribution_policy_zones = [
     "us-east4-a",
@@ -22,7 +22,7 @@ resource "google_compute_region_instance_group_manager" "web_mig" {
 }
 
 resource "google_compute_region_autoscaler" "web_autoscaler" {
-  name   = "week9-autoscaler"
+  name   = "week10-autoscaler"
   region = var.region
   target = google_compute_region_instance_group_manager.web_mig.id
 

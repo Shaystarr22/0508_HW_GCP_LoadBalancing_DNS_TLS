@@ -1,5 +1,5 @@
 resource "google_compute_health_check" "http_health_check" {
-  name = "week9-http-health-check"
+  name = "week10-http-health-check"
 
   timeout_sec        = 5
   check_interval_sec = 10

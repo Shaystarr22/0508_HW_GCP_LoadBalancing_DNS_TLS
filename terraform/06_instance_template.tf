@@ -1,5 +1,5 @@
 resource "google_compute_instance_template" "web_template" {
-  name_prefix  = "week9-template-"
+  name_prefix  = "week10-template-"
   machine_type = "n2-standard-2"
 
   tags = local.common_tags
